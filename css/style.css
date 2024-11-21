@@ -23,6 +23,37 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+/* Contenedor principal del slider */
+/* Contenedor principal del slider */
+.slider {
+  width: 70%;  /* 70% del ancho de la pantalla */
+  height:50%;  /* 70% de la altura de la pantalla */
+  margin: 0 auto;
+  overflow: hidden; /* Oculta las imágenes que se salgan */
+  border-radius: 10px; /* Bordes redondeados de 10px */
+  position: relative;
+}
+
+/* Contenedor que moverá las imágenes */
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease; /* Transición suave para el deslizamiento */
+}
+
+/* Cada imagen en el slider */
+.slide {
+  min-width: 100%; /* Cada slide ocupa todo el ancho del contenedor */
+  height: 100%; /* Mantiene la altura del contenedor */
+}
+
+/* Cambié object-fit para que las imágenes se ajusten sin ser recortadas */
+.slide img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho del slide */
+  height: 100%; /* Hace que la imagen ocupe toda la altura del slide */
+  object-fit: contain; /* Asegura que la imagen se muestre completa sin recortarse */
+}
+
+
 
 a {
   color: #FA5555;
