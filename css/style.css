@@ -21,6 +21,7 @@ body {
   background: #dec76cc6;
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
