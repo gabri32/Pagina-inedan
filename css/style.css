@@ -27,17 +27,19 @@ body {
 /* Contenedor principal del slider */
 .slider {
   width: 70%;  /* 70% del ancho de la pantalla */
-  height:50%;  /* 70% de la altura de la pantalla */
+  height:100%;  /* 70% de la altura de la pantalla */
   margin: 0 auto;
   overflow: hidden; /* Oculta las imágenes que se salgan */
   border-radius: 10px; /* Bordes redondeados de 10px */
   position: relative;
-}
+ }
 
 /* Contenedor que moverá las imágenes */
 .slider-container {
   display: flex;
-  transition: transform 0.5s ease; /* Transición suave para el deslizamiento */
+  transition: transform 0.5s ease; 
+  height: 40%;/* Transición suave para el deslizamiento */
+  background-color: #c0dffd;
 }
 
 /* Cada imagen en el slider */
@@ -50,7 +52,7 @@ body {
 .slide img {
   width: 100%; /* Hace que la imagen ocupe todo el ancho del slide */
   height: 100%; /* Hace que la imagen ocupe toda la altura del slide */
-  object-fit: contain; /* Asegura que la imagen se muestre completa sin recortarse */
+  object-fit:cover; /* Asegura que la imagen se muestre completa sin recortarse */
 }
 
 
@@ -332,7 +334,6 @@ border-radius: 50%;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-  background-color: #FA5555;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
